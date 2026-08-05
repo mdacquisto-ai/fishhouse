@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fish House — Benvenuti tra amici</title>
+<meta name="description" content="La casa al mare di Mimmo e Barbara. Tramonti inclusi, russamenti gratuiti, allegria obbligatoria.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="assets/Logo Fish House.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- decorative bubbles that float across the whole page -->
+<div class="bg-bubbles" aria-hidden="true">
+  <span class="bubble b1"></span>
+  <span class="bubble b2"></span>
+  <span class="bubble b3"></span>
+  <span class="bubble b4"></span>
+  <span class="bubble b5"></span>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#hero" class="brand">
+      <img src="assets/Logo Fish House.png" alt="Logo The Fish House" class="brand-logo">
+      <span class="brand-name">The Fish House</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#filosofia">La casa</a>
+      <a href="#sistemazioni">Sistemazioni</a>
+      <a href="#regolamento">Regolamento</a>
+      <a href="#prenota" class="nav-cta">Voglio venire! 🐠</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Apri il menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="assets/Tavola al tramonto (orizzontale).jpg" alt="Tavola apparecchiata al tramonto sul mare" class="hero-img">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <span class="hero-badge">★★★★★ — Recensioni inventate, tramonti autentici</span>
+    <h1 class="hero-title">Benvenuti alla<br><span class="hero-title-accent">Fish House</span></h1>
+    <p class="hero-subtitle">Dove il tramonto è incluso e il mare è sempre in prima fila</p>
+    <p class="hero-text">La casa al mare di Mimmo e Barbara apre le sue porte agli amici più sorridenti e spensierati.</p>
+
+    <div class="hero-buttons">
+      <a href="#sistemazioni" class="btn btn-primary">Scopri dove dormirai</a>
+      <a href="#prenota" class="btn btn-secondary">Prenota prima della Brizzi 🏁</a>
+    </div>
+  </div>
+
+  <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,64 L1440,120 L0,120 Z" fill="#FFFDF7"></path>
+  </svg>
+</section>
+
+<!-- ============ FILOSOFIA ============ -->
+<section class="philosophy" id="filosofia">
+  <div class="container">
+    <p class="eyebrow">Chi siamo (più o meno)</p>
+    <h2 class="section-title">Alla Fish House non sei un ospite,<br>sei di famiglia.</h2>
+    <p class="philosophy-text">
+      Qui non troverai reception, minibar o check-in automatici. Troverai Mimmo, Barbara,
+      una terrazza sul mare e un regolamento molto semplice: arrivare sorridenti,
+      dimenticare i pensieri e non presentarsi a mani vuote.
+    </p>
+
+    <div class="philosophy-cards">
+      <div class="phi-card">
+        <span class="phi-icon">🌊</span>
+        <h3>Mare sempre incluso</h3>
+        <p>Nessun supplemento, nessuna prenotazione: il mare c'è già, guarda fuori.</p>
+      </div>
+      <div class="phi-card">
+        <span class="phi-icon">🌅</span>
+        <h3>Tramonti senza supplemento</h3>
+        <p>Ogni sera, gratis, davanti a tutti. Anche i cinici si commuovono.</p>
+      </div>
+      <div class="phi-card">
+        <span class="phi-icon">😄</span>
+        <h3>Allegria obbligatoria</h3>
+        <p>Non è una richiesta, è nel regolamento. Vedi punto 1 qui sotto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SISTEMAZIONI ============ -->
+<section class="rooms" id="sistemazioni">
+  <div class="container">
+    <p class="eyebrow">Scegli il tuo destino</p>
+    <h2 class="section-title">Le sistemazioni della casa</h2>
+    <p class="section-subtitle">Quattro modi diversi per svegliarsi felici (o storditi). Scegli con cura.</p>
+
+    <div class="room-grid" id="roomGrid">
+
+      <article class="room-card" data-room="Camera con Mimmo che russa" data-price="Costo bassissimo">
+        <div class="room-icon">😴</div>
+        <h3 class="room-title">Camera con Mimmo che russa</h3>
+        <p class="room-price">Costo bassissimo</p>
+        <p class="room-desc">La soluzione più conveniente per chi possiede tappi per le orecchie, sonno pesante o una sincera passione per i rumori della natura.</p>
+        <ul class="room-perks">
+          <li>Esperienza sonora immersiva</li>
+          <li>Risveglio garantito</li>
+          <li>Possibilità di raccontarlo agli amici</li>
+        </ul>
+        <p class="room-warning">⚠️ Il russare può variare in intensità in base alla quantità di gelato consumata.</p>
+        <p class="room-payment"><strong>Pagamento suggerito:</strong> una vaschetta di gelato artigianale per Mimmo.</p>
+        <button type="button" class="btn btn-choose">Scelgo questa</button>
+      </article>
+
+      <article class="room-card room-card--premium" data-room="Camera con colazione preparata da Barbara" data-price="Costo altissimo">
+        <span class="room-badge">PREMIUM</span>
+        <div class="room-icon">🥐</div>
+        <h3 class="room-title">Camera con colazione preparata da Barbara</h3>
+        <p class="room-price">Costo altissimo</p>
+        <p class="room-desc">L'esperienza premium della Fish House. Risveglio lento, tavola apparecchiata e colazione preparata da Barbara. Il lusso vero ha sempre un prezzo.</p>
+        <ul class="room-perks">
+          <li>Colazione inclusa</li>
+          <li>Risveglio elegante</li>
+          <li>Diritto di vantarsi per tutta l'estate</li>
+        </ul>
+        <p class="room-warning">⚠️ Disponibilità limitatissima e soggetta all'insindacabile approvazione di Barbara.</p>
+        <p class="room-payment"><strong>Pagamento suggerito:</strong> baci e sorrisi per Barbara.</p>
+        <button type="button" class="btn btn-choose">Scelgo questa</button>
+      </article>
+
+      <article class="room-card" data-room="Divano vista avventura" data-price="Costo basso">
+        <div class="room-icon">🛋️</div>
+        <h3 class="room-title">Divano vista avventura</h3>
+        <p class="room-price">Costo basso</p>
+        <p class="room-desc">Per spiriti liberi, viaggiatori dell'ultimo minuto e amici che sostengono di dormire bene ovunque.</p>
+        <ul class="room-perks">
+          <li>Posizione strategica</li>
+          <li>Facile accesso alla cucina</li>
+          <li>Perfetto per chi arriva dopo cena</li>
+        </ul>
+        <p class="room-warning">⚠️ La lunghezza del divano non si adatta automaticamente all'altezza dell'ospite.</p>
+        <p class="room-payment"><strong>Pagamento suggerito:</strong> dolci, cornetti o semifreddi per Mimmo.</p>
+        <button type="button" class="btn btn-choose">Scelgo questa</button>
+      </article>
+
+      <article class="room-card room-card--challenge" data-room="Prenotazione prima della Brizzi" data-price="Premio misterioso">
+        <span class="room-badge room-badge--challenge">SFIDA APERTA</span>
+        <div class="room-icon">🏆</div>
+        <h3 class="room-title">Prenotazione prima della Brizzi</h3>
+        <p class="room-price">Premio misterioso</p>
+        <p class="room-desc">Chi riesce a prenotare prima della Brizzi riceverà un regalo speciale. Nessuno sa quale. Forse neppure gli host.</p>
+        <ul class="room-perks">
+          <li>Gloria eterna</li>
+          <li>Diritto di precedenza</li>
+          <li>Regalo a sorpresa</li>
+          <li>Possibilità di ricordarlo alla Brizzi per tutta la vacanza</li>
+        </ul>
+        <p class="room-warning">⚠️ La prenotazione sarà valida soltanto dopo la verifica ufficiale dell'orario di arrivo della richiesta.</p>
+        <p class="room-payment"><strong>Pagamento suggerito:</strong> libera offerta, purché commestibile o rilassante.</p>
+        <button type="button" class="btn btn-choose">Scelgo questa</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGOLAMENTO ============ -->
+<section class="rules" id="regolamento">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Leggere prima di partire</p>
+    <h2 class="section-title section-title--light">Il severissimo regolamento<br>della Fish House</h2>
+
+    <ol class="rules-list">
+      <li>È obbligatorio arrivare sorridenti e spensierati.</li>
+      <li>È vietato parlare di lavoro per più di sette minuti consecutivi.</li>
+      <li>Mimmo accetta esclusivamente dolci, gelati, torte, cioccolata e altre forme di zucchero legalmente riconosciute.</li>
+      <li>Barbara accetta esclusivamente baci, abbracci, massaggi e coccole certificate.</li>
+      <li>Il tramonto deve essere fotografato almeno una volta, ma non è obbligatorio pubblicarlo.</li>
+      <li>Chi prenota prima della Brizzi ha diritto a un regalo misterioso.</li>
+      <li>Eventuali russamenti di Mimmo sono parte integrante dell'esperienza.</li>
+      <li>La colazione di Barbara non può essere pretesa, sollecitata o data per scontata.</li>
+      <li>Alla partenza è obbligatorio lasciare almeno una bella recensione.</li>
+    </ol>
+
+    <p class="rules-disclaimer">
+      L'invio della richiesta comporta l'accettazione integrale del regolamento e la rinuncia
+      preventiva a qualsiasi lamentela relativa a russamenti, divani corti o eccesso di bellezza del tramonto.
+    </p>
+  </div>
+</section>
+
+<!-- ============ GALLERIA ============ -->
+<section class="gallery" id="galleria">
+  <div class="container">
+    <p class="eyebrow">Un assaggio</p>
+    <h2 class="section-title">Quello che vi aspetta</h2>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item" data-full="assets/Tavola al tramonto (orizzontale).jpg">
+        <img src="assets/Tavola al tramonto (orizzontale).jpg" alt="Tavola apparecchiata sulla terrazza al tramonto" loading="lazy">
+        <figcaption>Cena con vista: il momento in cui tutti smettono finalmente di guardare il telefono.</figcaption>
+      </figure>
+      <figure class="gallery-item" data-full="assets/Tramonto_orizzontale_1.jpg">
+        <img src="assets/Tramonto_orizzontale_1.jpg" alt="Tramonto sul mare visto dalla terrazza" loading="lazy">
+        <figcaption>Ogni sera uno spettacolo diverso. Biglietto d'ingresso: un sorriso.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORM PRENOTAZIONE ============ -->
+<section class="booking" id="prenota">
+  <div class="container container--narrow">
+    <p class="eyebrow">Ultimo passo</p>
+    <h2 class="section-title">Invia la tua candidatura<br>alla Fish House</h2>
+    <p class="section-subtitle">Non è una vera prenotazione finché Mimmo o Barbara non rispondono con un inequivocabile: «Va bene, venite!»</p>
+
+    <form id="bookingForm" class="booking-form" novalidate>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="fullname">Nome e cognome</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Es. Giovanni Bellissimo" required>
+          <span class="form-error" data-for="fullname"></span>
+        </div>
+        <div class="form-field">
+          <label for="phone">Numero di telefono</label>
+          <input type="tel" id="phone" name="phone" placeholder="Es. 333 1234567" required>
+          <span class="form-error" data-for="phone"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="guests">Numero di ospiti</label>
+          <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Es. 2" required>
+          <span class="form-error" data-for="guests"></span>
+        </div>
+        <div class="form-field">
+          <label for="checkin">Data di arrivo</label>
+          <input type="date" id="checkin" name="checkin" required>
+          <span class="form-error" data-for="checkin"></span>
+        </div>
+        <div class="form-field">
+          <label for="checkout">Data di partenza</label>
+          <input type="date" id="checkout" name="checkout" required>
+          <span class="form-error" data-for="checkout"></span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="room">Sistemazione scelta</label>
+        <select id="room" name="room" required>
+          <option value="" disabled selected>Scegli la tua sistemazione…</option>
+          <option value="Camera con Mimmo che russa">Camera con Mimmo che russa — costo bassissimo</option>
+          <option value="Camera con colazione preparata da Barbara">Camera con colazione preparata da Barbara — costo altissimo</option>
+          <option value="Divano vista avventura">Divano vista avventura — costo basso</option>
+          <option value="Prenotazione prima della Brizzi">Prenotazione prima della Brizzi — premio misterioso</option>
+        </select>
+        <span class="form-error" data-for="room"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="payment">Proposta di pagamento</label>
+        <select id="payment" name="payment">
+          <option value="" disabled selected>Cosa porti in dono?</option>
+          <option value="Gelato artigianale per Mimmo">Gelato artigianale per Mimmo</option>
+          <option value="Torta o dolci assortiti per Mimmo">Torta o dolci assortiti per Mimmo</option>
+          <option value="Cornetti per la colazione">Cornetti per la colazione</option>
+          <option value="Massaggio rilassante per Barbara">Massaggio rilassante per Barbara</option>
+          <option value="Giornata benessere completa per Barbara">Giornata benessere completa per Barbara</option>
+          <option value="Combinazione dolce + SPA">Combinazione dolce + SPA</option>
+          <option value="Offerta creativa da sottoporre agli host">Offerta creativa da sottoporre agli host</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="notes">Note (allergie, orari, richieste particolari…)</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Es. arrivo tardi, porto anche il cane, sono terrorizzato dai gabbiani…"></textarea>
+      </div>
+
+      <div class="form-checks">
+        <label class="checkbox-row">
+          <input type="checkbox" id="check1" name="check1" required>
+          <span>Dichiaro di essere sorridente, spensierato e disposto a non pagare in euro.</span>
+        </label>
+        <span class="form-error" data-for="check1"></span>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="check2" name="check2" required>
+          <span>Prometto di non lamentarmi se Mimmo russa.</span>
+        </label>
+        <span class="form-error" data-for="check2"></span>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="check3" name="check3" required>
+          <span>Accetto la possibile superiorità organizzativa della Brizzi.</span>
+        </label>
+        <span class="form-error" data-for="check3"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-submit">Invia la richiesta a Mimmo e Barbara 🐟</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ RIEPILOGO MODALE ============ -->
+<div class="modal-backdrop" id="summaryModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="summaryTitle">
+    <button class="modal-close" id="modalClose" aria-label="Chiudi">&times;</button>
+    <h3 id="summaryTitle">Riepilogo della tua richiesta</h3>
+    <div id="summaryContent" class="summary-content"></div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-secondary" id="modalEdit">Modifica</button>
+      <button type="button" class="btn btn-primary" id="modalConfirm">Conferma e invia su WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Chiudi immagine">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <img src="assets/Logo Fish House.png" alt="Logo The Fish House" class="footer-logo">
+    <p>The Fish House — casa di amici, non di sconosciuti.</p>
+    <p class="footer-small">Fatta con 🐟, tramonti e un pizzico di follia da Mimmo &amp; Barbara.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
